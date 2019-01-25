@@ -91,12 +91,12 @@
 <p>7、完成以上步骤后，便可以【启动】项目了，项目编译完之后，类库文件(Hello World.dll)便输出到了你的Debug文件夹中。<br>那么在得到了程序拓展文件(XXX.dll)之后，我们该如何把它加入到Revit中呢？</p>
 <p>8、找到文件夹【C:\Users\Administrator\AppData\Roaming\Autodesk\Revit\Addins\2017】（我使用的是Win10系统，Win7自行对应）<br>      新建一个记事本【Hello World.addin】文件，内容如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;</div><div class="line">&lt;RevitAddIns&gt;</div><div class="line">	&lt;AddIn Type=&quot;Command&quot;&gt;</div><div class="line">	&lt;VendorId&gt;ACID&lt;/VendorId&gt;</div><div class="line">	&lt;Text&gt;Hello Revit&lt;/Text&gt;</div><div class="line">	&lt;Description&gt;Hello World to Revit.&lt;/Description&gt;</div><div class="line">	&lt;FullClassName&gt;Hello_World.Command&lt;/FullClassName&gt;</div><div class="line">	&lt;Assembly&gt;F:\MyTestDemos\Hello World\Hello World\bin\Debug\Hello World.dll&lt;/Assembly&gt;</div><div class="line">	&lt;AddInId&gt;E2CB270D-2889-48AD-8193-C93663BE7AD9&lt;/AddInId&gt;</div><div class="line">	&lt;/AddIn&gt;</div><div class="line">&lt;/RevitAddIns&gt;</div></pre></td></tr></table></figure></p>
 <p>【VendorId】，开发商Id，可以自己随意取名。<br>【Text】，Revit中插件的名称。<br>【Description】，插件的描述信息。（可不写这项）<br>【FullClassName】，类名。注意：得填写完整的【命名空间.类名】。<br>【Assembly】，需要加载的程序集的完整路径。<br>【AddIn】，这一项在VS的【工具】→【创建GUID】中获得。</p>
-<p>完成以上所有步骤后，打开Revit应用程序，【附加模块】→【外部工具】→，就可以看见你的Hello World插件了。<br><img src="http://img.blog.csdn.net/20160804171357673" alt="这里写图片描述"><br><img src="http://img.blog.csdn.net/20160804171416841" alt="这里写图片描述"></p>
+<p>完成以上所有步骤后，打开Revit应用程序，【附加模块】→【外部工具】→，就可以看见你的Hello World插件了。<br><img src="https://img-blog.csdn.net/20160804171357673" alt="这里写图片描述"><br><img src="https://img.blog.csdn.net/20160804171416841" alt="这里写图片描述"></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/01/25/Revit二次开发入门--创建一个简单的程序/" data-id="cjrbhmndm0001gspvhc3oansi" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/01/25/Revit二次开发入门--创建一个简单的程序/" data-id="cjrbhxc5s0000b4pvxyt5o1ts" class="article-share-link">Share</a>
       
       
     </footer>
@@ -141,7 +141,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/09/14/hello-world/" data-id="cjrbhmndb0000gspvsaexwq3k" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/09/14/hello-world/" data-id="cjrbhxc640001b4pvc6p42ifm" class="article-share-link">Share</a>
       
       
     </footer>
